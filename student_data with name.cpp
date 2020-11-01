@@ -44,15 +44,10 @@ int input()
 	cout << "Enter name: ";
 	cin.ignore();
 	getline(cin, name);
-	if (name >= "/99")
-	{	
-		cout << "Enter obtained marks: ";
-		cin >> o_marks;
-		cout << "Enter total marks: ";
-		cin >> t_marks;
-	}
-	else
-		cout << "Enter correct name." << endl;
+	cout << "Enter obtained marks: ";
+	cin >> o_marks;
+	cout << "Enter total marks: ";
+	cin >> t_marks;
 
 	per = (o_marks / t_marks) * 100;
 
